@@ -4,9 +4,11 @@ from django.contrib import admin
 from polls.models import *
 
 # Register your models here.
+# Alternative 1
 # admin.site.register(Question)
 # admin.site.register(Choice)
 
+# Alternative 2
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
